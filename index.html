@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Play Games</title>
+</head>
+<body>
+    <div class="container-1">
+    <!-- Task 1 -->
+        <h2>Task 1: Find Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div><button class="btn btn-primary" onclick="age()">Click Here</button></div>
+            <div><button class="btn btn-danger" onclick="reset()">Reset</button></div>
+        </div> 
+
+    
+    <div class="flex-box-container-1">
+        <div id="flex-box-result">  
+        </div>
+    </div>
+    <!-- Task 2 -->
+        <h2>Task 2: Image Generator</h2>
+        <div class="flex-box-container-1">
+            <button class="btn btn-success btn-generate">Generate</button>
+        </div>
+        <div class="flex-box-container-1" id="flex-cat">
+           
+        </div>
+    </div>
+    <!-- Task-3 -->
+    <div class="container-2">
+        <h2>Task 3: Play Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="rps-div">
+            <img id="rock" src="https://www.clipartkey.com/mpngs/m/322-3222426_cartoon-rock-clipart.png" alt="" height="150" width="150" onclick="rpsgame(this)" >
+            <img id="paper" src="https://i.pinimg.com/originals/cf/a6/54/cfa654e902cb20da0419f0c00875cb56.jpg" alt="" height="150" width="150" onclick="rpsgame(this)" >
+            <img id="scissors" src="https://t4.ftcdn.net/jpg/01/46/13/43/360_F_146134335_QnPLOJcm4jbIeTpyiFlX4WjIECFkKppb.jpg" alt="" height="150" width="150" onclick="rpsgame(this)" >
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Task 4: Change the Color of buttons</h2>
+        <div class="flex-box-changecolor">
+            <form action="">
+                <select name="coloroption" id="dropdown" onchange="btncolorchange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">B1</button>
+            <button class="btn btn-danger">B2</button>
+            <button class="btn btn-warning">B3</button>
+            <button class="btn btn-success">B4</button>
+        </div>
+    </div>
+  <script src="js/script.js"></script>  
+</body>
+</html> 
